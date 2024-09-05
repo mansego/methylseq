@@ -10,3 +10,7 @@ testing*
 .nf-test
 .nf-test.log
 test-datasets/
+Result*
+command.txt
+hpc.config
+assets/samplesheet*.csv
