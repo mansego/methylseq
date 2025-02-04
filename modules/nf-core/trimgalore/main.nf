@@ -51,6 +51,7 @@ process TRIMGALORE {
             ${args_list.join(' ')} \\
             --cores ${cores} \\
             --gzip \\
+            --clip_R1 10 --clip_R2 10 --three_prime_clip_R1 10 --three_prime_clip_R2 10 \\
             ${prefix}.fastq.gz
 
         cat <<-END_VERSIONS > versions.yml
@@ -70,6 +71,7 @@ process TRIMGALORE {
             --cores ${cores} \\
             --paired \\
             --gzip \\
+            --clip_R1 10 --clip_R2 10 --three_prime_clip_R1 10 --three_prime_clip_R2 10 \\
             ${prefix}_1.fastq.gz \\
             ${prefix}_2.fastq.gz
 
